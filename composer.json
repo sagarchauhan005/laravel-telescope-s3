@@ -1,16 +1,12 @@
 {
-    "name": "laravel/telescope",
+    "name": "laravel/telescope-s3",
     "description": "An elegant debug assistant for the Laravel framework.",
     "keywords": ["laravel", "monitoring", "debugging"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Taylor Otwell",
-            "email": "taylor@laravel.com"
-        },
-        {
-            "name": "Mohamed Said",
-            "email": "mohamed@laravel.com"
+            "name": "Sagar Chauhan",
+            "email": "coolsagar005@gmail.com"
         }
     ],
     "require": {
