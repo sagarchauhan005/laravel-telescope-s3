@@ -1,7 +1,7 @@
 {
     "name": "sagar-chauhan-laravel/telescope-s3",
     "description": "An elegant debug assistant for the Laravel framework.",
-    "keywords": ["laravel", "monitoring", "debugging"],
+    "keywords": ["laravel", "monitoring", "debugging", "s3 logs", "s3"],
     "license": "MIT",
     "authors": [
         {
