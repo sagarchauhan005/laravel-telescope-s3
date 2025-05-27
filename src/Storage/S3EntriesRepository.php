@@ -57,7 +57,10 @@ class S3EntriesRepository implements Contract, ClearableRepository, PrunableRepo
                 $results->push($this->toEntryResult($data, $file));
             }
         }
-        return $results->sortByDesc('sequence')->take($options->limit)->values();
+        // Sort by sequence if present, otherwise by created_at
+        return $results->sortByDesc(function($entry) {
+            return $entry->sequence ?? ($entry->createdAt ? $entry->createdAt->timestamp : 0);
+        })->take($options->limit)->values();
     }
 
     public function store(Collection $entries)
